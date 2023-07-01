@@ -5,7 +5,7 @@ import 'package:paystack_pay/src/widgets/paystack_pay_widget.dart';
 
 /// A Calculator.
 class PaystackPay {
-  Future<dynamic> now({
+  Future<dynamic> pay({
     /// Context provided from current view
     required BuildContext context,
 
@@ -19,7 +19,7 @@ class PaystackPay {
     required String reference,
 
     /// Currency of the transaction
-    String? currency,
+    String currency = "NGN",
 
     /// Amount you want to charge the user. Add extra two zeros after typing the amount
     required String amount,

@@ -1,17 +1,15 @@
 name: paystack_pay
 description: The Paystack Plugin You Have been waiting for.
 version: 0.0.1
-homepage:
+homepage: https://github.com/peterson-umoke/paystack_pay
 
 environment:
   sdk: '>=3.0.5 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
-  bloc: ^8.1.2
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.3
   flutter_hooks: ^0.18.6
   freezed_annotation: ^2.2.0
   http: ^1.1.0
