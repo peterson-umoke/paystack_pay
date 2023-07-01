@@ -8,7 +8,7 @@ import 'package:paystack_pay/src/models/transaction_initialization_model.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class PaystackPayWidget extends HookWidget {
-  const PaystackPayWidget({
+  PaystackPayWidget({
     required this.secretKey,
     required this.reference,
     required this.email,
@@ -54,7 +54,7 @@ class PaystackPayWidget extends HookWidget {
   /// If transacted was not completed at all.
   final VoidCallback? transactionNotCompleted;
 
-  late WebViewController controller;
+  late final WebViewController controller;
 
   @override
   Widget build(BuildContext context) {
