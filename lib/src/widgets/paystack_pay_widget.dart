@@ -54,10 +54,10 @@ class PaystackPayWidget extends HookWidget {
   /// If transacted was not completed at all.
   final VoidCallback? transactionNotCompleted;
 
+  late WebViewController controller;
+
   @override
   Widget build(BuildContext context) {
-    late WebViewController controller;
-
     final isLoading = useState<bool>(false);
 
     final generatePaystackUrl = useCallback(() async {
